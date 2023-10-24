@@ -1,3 +1,4 @@
 {
-  "VisionKey":  "ReplaceMe"
+  "VisionKey": "ReplaceMe",
+  "VisionEndpoint": "https://REPLACEME.cognitiveservices.azure.com/"
 }
