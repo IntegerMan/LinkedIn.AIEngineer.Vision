@@ -22,7 +22,8 @@ internal class Program {
         Uri imageUrl = new("https://matteland.dev/img/ProfileMattE.94cd6573.png");
         using VisionSource imageSource = VisionSource.FromFile(localImage); // VisionSource.FromUrl(imageUrl);
 
-        ComputerVisionDemo.PerformImageAnalysis(options, imageSource);
+        // Load the image into memory
+        ComputerVisionDemo.PerformImageAnalysis(options, imageSource, localImage);
         //SegmentationDemo.PerformBackgroundRemoval(options, imageSource);
         //SegmentationDemo.PerformForegroundMatting(options, imageSource);
     }
