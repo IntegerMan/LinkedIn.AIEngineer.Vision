@@ -1,0 +1,10 @@
+@endpoint=https://102-azure-ai-vision.cognitiveservices.azure.com
+@key=44ac5d2a8fa342a99457b03ac725d28b
+
+POST {{endpoint}}/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=caption,tags,objects,denseCaptions,people
+Content-Type: application/json
+Ocp-Apim-Subscription-Key: {{key}}
+
+{
+  "url": "https://bit.ly/engineer-costume"
+}
